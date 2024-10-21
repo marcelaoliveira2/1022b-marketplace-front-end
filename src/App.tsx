@@ -8,13 +8,30 @@ type ProdutoType = {
   preco:string,
   imagem:string
 }
+
+type UsuarioType = {
+  id: number;
+  nome: string;
+  email: string;
+  create_at: string;
+  updated: string;
+
+};
+
 function App() {
   const [produtos, setProdutos] = useState<ProdutoType[]>([])
+  const [usuarios, setUsuarios] = useState<UsuarioType[]>([])
   //useEffect(O QUe fazer, Quando Fazer)
   useEffect(()=>{
     fetch("https://one022b-marketplace-eswf.onrender.com/produtos")
     .then(resposta=>resposta.json())
     .then(dados=>setProdutos(dados))
+  },[])
+
+  useEffect(()=>{
+    fetch("https://one022b-marketplace-eswf.onrender.com/usuarios")
+    .then(resposta=>resposta.json())
+    .then(dados=>setUsuarios(dados))
   },[])
   return (
     <>  
@@ -31,6 +48,18 @@ function App() {
         })}
       </div>
       
+      <div className="container-usuarios">
+        {usuarios.map(user=>{
+          return(
+            <div key={user.id} className="usuario-item">
+            <h3>{user.nome}</h3>
+            <p>{user.email}</p>
+            <p>{user.create_at}</p>
+            <p>{user.updated}</p>
+            </div>
+          )
+        })}
+      </div>
     </>
   )
 }
