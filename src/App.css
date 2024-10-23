@@ -23,7 +23,7 @@
 }
 
 .produto-item h1 {
-  font-size: 1.5em;
+  font-size: 30px;
   color: #000000;
 }
 
@@ -50,12 +50,12 @@
 }
 
 .usuario-item h1 {
-  font-size: 15px;
+  font-size: 30px;
   color: #000000;
 }
 
 .usuario-item p {
-  font-size: 10px;
+  font-size: 256px;
   color: #000000;
 }
 
