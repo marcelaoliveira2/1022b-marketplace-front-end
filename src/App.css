@@ -28,7 +28,7 @@
 }
 
 .produto-item p {
-  font-size: 1em;
+  font-size: 10px;
   color: #000000;
 }
 
@@ -50,11 +50,12 @@
 }
 
 .usuario-item h1 {
-  font-size: 1.5em;
+  font-size: 15px;
   color: #000000;
 }
 
 .usuario-item p {
-  font-size: 1em;
+  font-size: 10px;
   color: #000000;
 }
+
