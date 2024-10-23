@@ -11,7 +11,7 @@
 /* Estilo para cada item de produto */
 .produto-item {
   background-color: #f9f9f9;
-  border: 1px solid #131212;
+  border: 1px solid #7a7777;
   border-radius: 10px;
   padding: 20px;
   max-width: 250px;
@@ -31,7 +31,7 @@
 
 .produto-item p {
   font-size: 1em;
-  color: #c07f7f;
+  color: #8b8585;
 }
 
 /* Estilo para o container de usuários */
