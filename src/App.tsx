@@ -49,9 +49,9 @@ function App() {
       </div>
       
       <div className="container-usuarios">
+        <div>Lista de Produtos</div>
         {usuarios.map(user=>{
           return(
-            <h3>Lista de Produtos</h3>
             <div key={user.id} className="usuario-item">
             <h3>{user.nome}</h3>
             <p>{user.email}</p>
