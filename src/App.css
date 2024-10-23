@@ -1,43 +1,63 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Estilo para o container de produtos */
+.container-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilo para cada item de produto */
+.produto-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 250px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.produto-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.produto-item h1 {
+  font-size: 1.5em;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.produto-item p {
+  font-size: 1em;
+  color: #666;
 }
 
-.card {
-  padding: 2em;
+/* Estilo para o container de usuários */
+.container-usuarios {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-.read-the-docs {
-  color: #888;
+/* Estilo para cada item de usuário */
+.usuario-item {
+  background-color: #e9e9e9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 250px;
+  text-align: center;
 }
 
+.usuario-item h1 {
+  font-size: 1.5em;
+  color: #555;
+}
+
+.usuario-item p {
+  font-size: 1em;
+  color: #777;
+}
