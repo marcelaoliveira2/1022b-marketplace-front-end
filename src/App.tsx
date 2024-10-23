@@ -41,7 +41,6 @@ function App() {
             <div key={prod.id} className="produto-item">
               <h1>{prod.nome}</h1>
               <img src={prod.imagem} alt="Imagem do produto" />
-              
               <p>{prod.preco}</p>
               <p>{prod.descricao}</p>
             </div>
