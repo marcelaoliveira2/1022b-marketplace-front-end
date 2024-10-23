@@ -35,8 +35,10 @@ function App() {
   },[])
   return (
     <>  
+      <div className='titulo-lista'>
+        <h2>Lista de Produtos</h2>
+      </div>
       <div className="container-produtos">
-      <div>Lista de Produtos</div>
         {produtos.map(prod=>{
           return(
             <div key={prod.id} className="produto-item">
@@ -49,8 +51,10 @@ function App() {
         })}
       </div>
       
+      <div className='titulo-lista'>
+        <h2>Lista de Usuários</h2>
+      </div>
       <div className="container-usuarios">
-        <div>Lista de Usuários</div>
         {usuarios.map(user=>{
           return(
             <div key={user.id} className="usuario-item">
