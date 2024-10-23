@@ -1,7 +1,7 @@
 .container-produtos {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 100px;
   justify-content: center;
   margin-top: 20px;
   padding: 20px;
