@@ -23,13 +23,13 @@ function App() {
   const [usuarios, setUsuarios] = useState<UsuarioType[]>([])
   //useEffect(O QUe fazer, Quando Fazer)
   useEffect(()=>{
-    fetch("https://one022b-marketplace-eswf.onrender.com/produtos")
+    fetch("http://localhost:5173/produtos")
     .then(resposta=>resposta.json())
     .then(dados=>setProdutos(dados))
   },[])
 
   useEffect(()=>{
-    fetch("https://one022b-marketplace-eswf.onrender.com/usuarios")
+    fetch("http://localhost:5173/usuarios")
     .then(resposta=>resposta.json())
     .then(dados=>setUsuarios(dados))
   },[])
