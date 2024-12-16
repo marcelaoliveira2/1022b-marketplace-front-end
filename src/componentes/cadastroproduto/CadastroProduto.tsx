@@ -12,9 +12,6 @@ export default function CadastroProduto(){
     function handleForm(event:FormEvent){
         event.preventDefault();
         console.log("Tentei cadastrar produtos");
-        //Pegar os valores dos campos de input e colocar em um objeto do tipo produto
-        //Devo cadastrar no banco utilizando o BackEnd
-        //FETCH   - > PRODUTO
         const produto = {
             id: id,
             nome: nome,
