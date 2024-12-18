@@ -5,7 +5,7 @@ type ProdutoType = {
   id:number,
   nome:string,
   descricao:string,
-  preco:string,
+  valor:string,
   imagem:string
 }
 function App() {
@@ -24,7 +24,7 @@ function App() {
             <div key={prod.id} className="produto-item">
               <h1>{prod.nome}</h1>
               <img src={prod.imagem} alt="Imagem de celular" />
-              <p>{prod.preco}</p>
+              <p>R$: {prod.valor}</p>
               <p>{prod.descricao}</p>
             </div>
           )
