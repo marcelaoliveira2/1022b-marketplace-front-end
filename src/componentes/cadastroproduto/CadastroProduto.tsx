@@ -6,7 +6,7 @@ export default function CadastroProduto(){
     const [id,setId] = useState("")
     const [descricao,setDescricao] = useState("")
     const [nome,setNome] = useState("")
-    const [valor,setValor] = useState("")
+    const [preco,setPreco] = useState("")
     const [imagem,setImagem] = useState("")
 
     function handleForm(event:FormEvent){
@@ -16,7 +16,7 @@ export default function CadastroProduto(){
             id: id,
             nome: nome,
             descricao: descricao,
-            valor: valor,
+            preco: preco,
             imagem: imagem
         }
         fetch("http://localhost:8000/produtos",{
@@ -41,8 +41,8 @@ export default function CadastroProduto(){
     function handleDescricao(event:ChangeEvent<HTMLInputElement>){
         setDescricao(event.target.value)
     }
-    function handleValor(event:ChangeEvent<HTMLInputElement>){
-        setValor(event.target.value)
+    function handlePreco(event:ChangeEvent<HTMLInputElement>){
+        setPreco(event.target.value)
     }
     function handleNome(event:ChangeEvent<HTMLInputElement>){
         setNome(event.target.value)
@@ -68,8 +68,8 @@ export default function CadastroProduto(){
                     <input type="text" name="descricao" onChange={handleDescricao} />
                 </div>
                 <div>
-                    <label htmlFor="valor">valor</label>
-                    <input type="text" name="valor" onChange={handleValor} />
+                    <label htmlFor="preco">preço</label>
+                    <input type="text" name="preco" onChange={handlePreco} />
                 </div>
                 <div>
                     <label htmlFor="imagem">imagem</label>
