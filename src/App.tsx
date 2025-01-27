@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+
 import './App.css'
 
 type ProdutoType = {
@@ -34,7 +35,7 @@ function App() {
 
   return (
     <>  
-      <div className="container-produtos">
+      <main className="container-produtos">
         {produtos.map(prod=>{
           return(
             <div key={prod.id} className="produto-item">
@@ -47,7 +48,7 @@ function App() {
             </div>
           )
         })}
-      </div>
+      </main>
       
     </>
   )
