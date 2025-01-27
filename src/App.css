@@ -1,9 +1,8 @@
 #root {
   /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-  width: 70vw;
+  width: 100vw;
 }
 
 .logo {
@@ -48,11 +47,20 @@
   box-shadow: 0 0 10px #f0f0f0;
 }
 .produto-item>img{
-  height: 200px;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 .container-produtos{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
+  
+}
+.container-produtos h1{
+  font-size: 2em;
+}
+
+.imagem-previa-upload{
+  width:300px;
+  height:auto;
 }
